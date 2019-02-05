@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:500');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:800|Fira+Sans:500,700');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+}
+
+/* this take off space between sections */
+header,
+section,
+footer {
+    margin: 0;
+    padding: 1px; /* tweaked from 0 to 1px */
+}
+
+section {
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3, a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color:#191919;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #5d7177;
+}
+
+h3 {
+    font-size: 40px;
+    padding-top: 8%;
+    margin-bottom: 5px;
+}
+
+h4, p {
+    font-family: 'Roboto Slab', serif;
+    font-optical-sizing: #494949;
+}
+
+hr {
+    width: 30px;
+    height: 3px;
+    background: #494949;
+    border: 0;
+    margin: 0 auto 40px auto;
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+#logo, li, img, .fa-bars  {
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+.fa-bars {
+    display: none;
+}
+
+/* from now, it starts individual */
+
+#logo {
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    width: 200px;
+    float: left;
+    margin: 15px 0 0 50px;
+}
+
+#logo:hover {
+    opacity: 0.5;
+}
+
+#logo img {
+    width: 100%;
+}
+
+header nav {
+    float: right;
+    margin: 10px 50px 0 0;
+}
+
+header nav ul li {
+    float: left;
+    margin-left: 25px;
+}
+
+header nav ul li:hover {
+    padding-top: 5px;
+}
+
+#home {
+    background: url(img/cover1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home h1 {
+    margin: 140px auto 0 auto;
+    font-size: 90px;
+}
+
+#home h2 {
+    margin: 0 auto 0 auto;
+    font-size: 30px;
+}
+
+#home span {
+    font-size: 120px;
+    font-weight: bold;
+    color: #FFB100;
+    position: absolute;
+    top: 120px;
+    left: 625px;
+    animation: anime linear 5s;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7); 
+    -webkit-text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7) ; 
+	-moz-text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7) ;
+}
+
+@keyframes anime {
+    0% {transform:  rotate(0deg);}
+    10% {transform:  rotate(-90deg);}
+    20% {transform:  rotate(-0deg);}
+    30% {transform:  rotate(-35deg);}
+    40% {transform:  rotate(-0deg);}
+    50% {transform:  rotate(-50deg);}
+    60% {transform:  rotate(-45deg);}
+    70% {transform:  rotate(-0deg);}
+    80% {transform:  rotate(-45deg);}
+    90% {transform:  rotate(-30deg);}
+    100% {transform:  rotate(-360deg);}
+}
+
+#home img {
+    width: 70px;
+    margin-top: 400px;
+    opacity: 1;
+}
+
+#home img:hover {
+    opacity: .5;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#about {
+    background: url(img/bg-grey.jpg) no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+#about-content {
+    width: 80%;
+    position: relative;
+    top: 130px;
+    left: 10%;;
+}
+
+#about p {
+    width: 100%;
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: 70px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #191919;
+}
+
+#about strong {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #191919;
+}
+
+#about img {
+    width: 70px;
+    margin-top: 140px;
+    margin-left: 450px;
+    opacity: 1;
+}
+
+#about img:hover {
+    opacity: .5;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#work {
+    background: url(img/bg-grey.jpg) no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+#work-content-a {
+    padding-left: 8%;
+    position: relative;
+    top: -120px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+#work h3 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 12em;
+}
+
+#work-content-b {
+    width: 300px;
+    position: relative;
+    top: -250px;
+    right: 55px;
+    float: right;
+    text-align: left;
+    text-transform: lowercase !important;
+    word-wrap: break-word;
+}
+
+#work h2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#cases {
+    background: url(img/bg-grey.jpg) no-repeat;
+}
+
+#cases #img-wrap {
+    position: relative;
+    background-size: cover;
+    margin-left: 5%;
+    box-sizing: border-box;
+}
+
+#cases img {
+    width: 340px;
+}
+
+#cases #pic1, #pic2, #pic3 {
+    position: relative;
+    left: 10%;
+    padding: 10px;
+    display: table-cell;
+    border: none;    
+}
+
+#cases #pic2 {
+    position: relative;
+    top: -100;
+}
+
+#cases a {
+    padding-top: 7%;
+}
+
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-left: 900px;
+    padding-top: -50px;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background: #FFB100;
+    transition: width .5s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+}
+
+#ads {
+    background-image: url("img/group.jpg");
+
+    /* Set a specific height */
+    min-height: 700px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ads #container {
+    width: 300px;
+    position: relative;
+    top: -50px;
+    left: 150px;
+}
+
+#ads h3 {
+    width: 100%;
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: 100px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    color: #191919;
+}
+
+#contact {
+    background: #E9EBE8;
+}
+    
+button {
+    position: relative;
+    top: 250px;
+    left: 3%;
+    height: 43%;
+    width: 68%;    
+    font-weight: 700;
+    font-size: 9em;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    color: #191919;
+    border: none;
+    border-bottom: 10px solid #FFB100;
+    outline: 0;
+    overflow:hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: 3s ease-in;
+    -o-transition: 3s ease-in;
+    -ms-transition: 3s ease-in;
+    -moz-transition: 3s ease-in;
+    -webkit-transition: 3s ease-in;
+}
+  
+.fill:before {
+    content: "";
+    position: absolute;
+    background: #FFB100;
+    opacity: 0.6;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top .8s ease-in;
+}
+  
+.fill:hover:before {
+    top: 0;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#footer #addr {
+    position: absolute;    
+    text-align: left;
+    left: 60%;    
+}
+
+#flex-container {
+    position: relative;
+    top: 200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 150px;
+}
+
+.flex-item {
+    padding: 80px;
+}
+
+iframe {
+    padding: 0 30px;
+}
+
+#footer {
+    background: #191919;
+}
+
+#footer h1 {
+    color: #FFB100;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+#footer p {
+    color: #c0c0c0;
+}
+
+#footer #touch {
+    font-size: 3em;
+}
+
+#footer #mf {
+    font-size: 12px;
+}
+
+/*  
+
+CODE FOR MEDIA NEEDS STILL REVIEW TOTALLY
+
+ */
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: auto;
+    }
+    #logo {
+        width: 100px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    header nav {
+        margin-top: 0;
+    }
+
+    header nav ul li {
+        font-size: 12px;
+    }
+
+    #home h1 {
+        font-size: 90px;
+        margin-top: 200px;
+    }
+
+    #home h2 {
+        font-size: 22px;
+    }
+    h3 {
+        padding-top: 12%;
+    }
+
+    #about p {
+        width: 80%;
+    }
+
+    #projects {
+        width: auto;
+    }
+
+    #projects ul li {
+        width: 100%;
+        float: none;
+    }
+
+    #projects ul li:last-child {
+        padding-bottom: 20%;
+    }
+
+    #projects img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #logo {
+        width: 90px;
+        margin-left: 30px;
+        margin-bottom: 5px;
+    }
+
+    header nav {
+        margin: 0;
+        float: none;
+    }
+
+    .fa-bars {
+        font-size: 17px;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        text-align: right;
+        float: right;
+        margin: -25px 30px 0 0;
+    }
+
+    .fa-bars:hover {
+        opacity: 0.5;
+    }
+    
+    header nav ul {
+        height: 0; /* it hiddes menu */
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    header nav ul.open {
+        height: auto;
+    }
+    
+    header nav ul li {
+        width: 100%;
+        padding: 5px 0;
+        margin: 0;
+        font-size: 11px;
+        border-top: 1px solid #dddddd;
+    }
+
+    header nav ul li:hover {
+        background-color: #eeeeee;
+    }
+
+    #home h1 {
+        font-size: 60px;
+        margin-top: 200px;
+    }
+
+    #home h2 {
+        width: 70%;
+        height: auto;
+    }
+
+    #projects img {
+        width: 70%;
+        height: auto;
+    }
+}
